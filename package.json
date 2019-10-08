@@ -1,6 +1,6 @@
 {
   "name": "@myfin/convenience-functions",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Convenience prototype functions for number, array, string and date",
   "main": "index.js",
   "scripts": {

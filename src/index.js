@@ -5,12 +5,9 @@ import * as objectExt from './objectExtensions';
 import * as stringExt from './stringExtensions';
 import * as functionExt from './functionExtensions'
 
-
-export default Object.freeze({
-  array: arrayExt,
-  date: dateExt,
-  number: numberExt,
-  object: objectExt,
-  string: stringExt,
-  func: functionExt
-});
+exports.array = Object.freeze(arrayExt);
+exports.date = Object.freeze(dateExt);
+exports.number = Object.freeze(numberExt);
+exports.string = Object.freeze(stringExt);
+exports.object = Object.freeze(objectExt);
+exports.func = Object.freeze(functionExt);

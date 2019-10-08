@@ -1,4 +1,2 @@
 
-module.exports = {
-    default: require('./dist/bundle.js')
-};
+module.exports = require('./dist/main.js');

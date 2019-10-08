@@ -1,6 +1,6 @@
 {
   "name": "@myfin/convenience-functions",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "description": "Convenience prototype functions for number, array, string and date",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,12 @@
   "keywords": [
     "utility",
     "convenience"
+  ],
+  "files": [
+    "src/**/*",
+    "tests/**/*",
+    "dist/*",
+    "index.js"
   ],
   "author": "Adrian Petrescu",
   "license": "MIT",

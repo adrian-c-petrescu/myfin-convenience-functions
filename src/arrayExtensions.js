@@ -74,7 +74,7 @@ export const installArrayExtensions = () => {
         if (this.length === 0) {
             return 0;
         }
-        return Math.max(this.map(item => lambda(item)));
+        return Math.max(...this.map(item => lambda(item)));
     };
 
 
@@ -83,7 +83,7 @@ export const installArrayExtensions = () => {
             return 0;
         }
 
-        return Math.min(this.map(item => lambda(item)));
+        return Math.min(...this.map(item => lambda(item)));
     };
 
 

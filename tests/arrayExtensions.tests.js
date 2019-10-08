@@ -127,4 +127,32 @@ describe('arrayExtensions', () => {
            expect([[1,2,3], [4], [], [5, 6, 7]].selectMany()).toEqual([1,2,3,4,5,6,7]);
        });
     });
+
+    describe('Max', () => {
+        it('Computes max on simple array', () => {
+            expect([5, 1, 2].max()).toBe(5);
+        });
+
+        it('Returns -infinity for empty array', () => {
+            expect([].max()).toBe(0);
+        });
+
+        it('Returns correct max when using lambda', () => {
+            expect([ {a: 5}, {a: 1}, {a: 7}].max(x => x.a)).toBe(7);
+        });
+    });
+
+    describe('Min', () => {
+        it('Computes min on simple array', () => {
+            expect([5, 1, 2].min()).toBe(1);
+        });
+
+        it('Returns +infinity for empty array', () => {
+            expect([].min()).toBe(0);
+        });
+
+        it('Returns correct max when using lambda', () => {
+            expect([ {a: 5}, {a: 1}, {a: 7}].min(x => x.a)).toBe(1);
+        });
+    });
 });

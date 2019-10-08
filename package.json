@@ -1,0 +1,36 @@
+{
+  "name": "@myfin/convenience-functions",
+  "version": "0.0.1",
+  "description": "Convenience prototype functions for number, array, string and date",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "test": "karma start karma.conf.js --reporters mocha --single-run --browsers ChromeHeadless"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrian-c-petrescu/myfin-convenience-functions.git"
+  },
+  "keywords": [
+    "utility",
+    "convenience"
+  ],
+  "author": "Adrian Petrescu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adrian-c-petrescu/myfin-convenience-functions/issues"
+  },
+  "homepage": "https://github.com/adrian-c-petrescu/myfin-convenience-functions#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "babel-loader": "^8.0.6",
+    "karma": "^4.3.0",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-webpack": "^4.0.2",
+    "puppeteer": "^1.20.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
+  }
+}

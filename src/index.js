@@ -6,11 +6,11 @@ import * as stringExt from './stringExtensions';
 import * as functionExt from './functionExtensions'
 
 
-export default {
+export default Object.freeze({
   array: arrayExt,
   date: dateExt,
   number: numberExt,
   object: objectExt,
   string: stringExt,
   func: functionExt
-};
+});

@@ -93,6 +93,13 @@ export const installArrayExtensions = () => {
         }
         return this[this.length - 1];
     }
+
+    Array.prototype.lastOrNull = function() {
+        if (this.length === 0) {
+            return null;
+        }
+        return this[this.length - 1];
+    }
 };
 
 export const removeArrayExtensions = () => {

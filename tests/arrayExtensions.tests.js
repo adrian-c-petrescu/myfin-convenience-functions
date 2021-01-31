@@ -155,4 +155,24 @@ describe('arrayExtensions', () => {
             expect([ {a: 5}, {a: 1}, {a: 7}].min(x => x.a)).toBe(1);
         });
     });
+
+    describe('Last', () => {
+        it('Returns last for nonempty array', () => {
+            expect([1, 2, 3].last()).toBe(3);
+        });
+
+        it('Throws for empty array', () => {
+            expect(() => [].last()).toThrow();
+        });
+    });
+
+    describe('LastOrNull', () => {
+        it('Returns last for nonempty array', () => {
+            expect([1, 2, 3].lastOrNull()).toBe(3);
+        });
+
+        it('Returns null for empty array', () => {
+            expect([].lastOrNull()).toBeNull();
+        });
+    });
 });

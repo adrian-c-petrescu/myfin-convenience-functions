@@ -1,3 +1,5 @@
+var webpack = require('webpack');
+
 process.env.CHROME_BIN = require('puppeteer').executablePath();
 console.log('Found Chrome bin - ' + process.env.CHROME_BIN);
 
@@ -24,7 +26,16 @@ module.exports = function(config) {
             'tests/**/*.tests.js': [ 'webpack' ]
         },
 
-        webpack: require('./webpack.conf.test.js'),
+        webpack: Object.assign(
+            require('./webpack.conf.test.js'),
+            {
+                plugins: [
+                    new webpack.DefinePlugin({
+                        'process.env.NODE_ENV': JSON.stringify('test')
+                    })
+                ]
+            }
+        ),
         webpackMiddleware: { noInfo: true },
 
         // reporter options

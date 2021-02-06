@@ -1,6 +1,6 @@
 {
   "name": "@myfin/convenience-functions",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Convenience prototype functions for number, array, string and date",
   "main": "index.js",
   "scripts": {
@@ -28,15 +28,16 @@
   },
   "homepage": "https://github.com/adrian-c-petrescu/myfin-convenience-functions#readme",
   "devDependencies": {
-    "@babel/core": "^7.7.7",
-    "babel-loader": "^8.0.6",
-    "karma": "^4.4.1",
+    "@babel/core": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "karma": "^6.1.0",
     "karma-chrome-launcher": "^3.1.0",
-    "karma-jasmine": "^2.0.1",
+    "karma-jasmine": "^4.0.1",
     "karma-mocha-reporter": "^2.2.5",
-    "karma-webpack": "^4.0.2",
-    "puppeteer": "^2.0.0",
-    "webpack": "^4.41.4",
-    "webpack-cli": "^3.3.10"
-  }
+    "karma-webpack": "^5.0.0",
+    "puppeteer": "^7.0.1",
+    "webpack": "^5.21.1",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {}
 }

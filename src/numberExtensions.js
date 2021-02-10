@@ -14,6 +14,15 @@ export const installNumberExtensions = () => {
 
         return intNum - remainder;
     };
+
+    Number.prototype.truncTo0 = function (nZeroes = 3) {
+        const min = Math.pow(0.1, nZeroes);
+        if ((this > 0 && this <= min) || (this < 0 && this >= -min)) {
+            return 0;
+        }
+
+        return this;
+    }
 };
 
 export const removeNumberExtensions = () => {

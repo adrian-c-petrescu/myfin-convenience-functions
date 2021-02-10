@@ -1,11 +1,12 @@
 {
   "name": "@myfin/convenience-functions",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Convenience prototype functions for number, array, string and date",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "test": "karma start karma.conf.js --reporters mocha --single-run --browsers ChromeHeadless"
+    "test": "karma start karma.conf.js --reporters mocha --single-run --browsers ChromeHeadless",
+    "test-debug": "karma start karma.conf.js --reporters mocha --browsers Chrome"
   },
   "repository": {
     "type": "git",
